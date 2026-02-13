@@ -1,0 +1,102 @@
+{% extends "view/layout/front.html" %}
+{% block content %}
+<div class="min-h-screen px-6 py-12">
+    <div class="max-w-6xl mx-auto">
+        <div class="mb-16">
+            <div class="flex items-baseline gap-4 mb-6">
+                <h1 class="text-5xl font-bold text-white tracking-tight">Real-time Examples_</h1>
+                <span class="text-red-500 text-2xl animate-pulse">●</span>
+            </div>
+            <p class="text-gray-400 text-lg max-w-2xl">
+                WebSocket and Server-Sent Events examples for Obsidian
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+            <a href="/chat" class="group block p-6 bg-zinc-900 border border-zinc-800 hover:border-red-500/50 transition-all">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="text-3xl">💬</div>
+                    <div class="text-red-500 group-hover:translate-x-1 transition-transform">→</div>
+                </div>
+                <div class="text-white font-bold mb-2">WebSocket Chat</div>
+                <div class="text-gray-500 text-sm mb-4">Real-time multi-user chat with WebSockets</div>
+                <div class="flex gap-2">
+                    <span class="px-2 py-1 bg-zinc-950 border border-zinc-800 text-xs text-gray-400">WebSocket</span>
+                    <span class="px-2 py-1 bg-zinc-950 border border-zinc-800 text-xs text-gray-400">Bi-directional</span>
+                </div>
+            </a>
+            <a href="/notifications" class="group block p-6 bg-zinc-900 border border-zinc-800 hover:border-red-500/50 transition-all">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="text-3xl">🔔</div>
+                    <div class="text-red-500 group-hover:translate-x-1 transition-transform">→</div>
+                </div>
+                <div class="text-white font-bold mb-2">SSE Notifications</div>
+                <div class="text-gray-500 text-sm mb-4">Live notification stream with Server-Sent Events</div>
+                <div class="flex gap-2">
+                    <span class="px-2 py-1 bg-zinc-950 border border-zinc-800 text-xs text-gray-400">SSE</span>
+                    <span class="px-2 py-1 bg-zinc-950 border border-zinc-800 text-xs text-gray-400">Server → Client</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="bg-zinc-950 border border-zinc-800 p-8 mb-16">
+            <h2 class="text-white font-bold mb-6">WebSocket vs SSE</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="text-red-500 font-bold mb-2">WebSocket</div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Bi-directional</div>
+                            <div class="text-gray-500 text-sm">Client ↔ Server communication</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Full-duplex</div>
+                            <div class="text-gray-500 text-sm">Send and receive simultaneously</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Use cases</div>
+                            <div class="text-gray-500 text-sm">Chat, games, collaboration</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-red-500 font-bold mb-2">Server-Sent Events</div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Uni-directional</div>
+                            <div class="text-gray-500 text-sm">Server → Client only</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Auto-reconnect</div>
+                            <div class="text-gray-500 text-sm">Built-in reconnection handling</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-500 mt-1">✓</span>
+                        <div>
+                            <div class="text-white">Use cases</div>
+                            <div class="text-gray-500 text-sm">Notifications, dashboards, logs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-zinc-900 flex justify-between items-center text-gray-600 text-sm">
+            <p>Part of the Obsidian framework</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
