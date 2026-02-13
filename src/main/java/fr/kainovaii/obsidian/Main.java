@@ -7,7 +7,6 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Obsidian app = new Obsidian();
-        app.init();
+        Obsidian.run(Main.class);
     }
 }
