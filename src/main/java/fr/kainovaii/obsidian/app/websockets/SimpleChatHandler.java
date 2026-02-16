@@ -1,6 +1,6 @@
 package fr.kainovaii.obsidian.app.websockets;
 
-import fr.kainovaii.obsidian.core.web.route.methods.WebSocket;
+import fr.kainovaii.obsidian.routing.methods.WebSocket;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect;
