@@ -38,6 +38,7 @@ build/
 .vscode/
 .env
 /Spark
+data.db
 
 ### Mac OS ###
 .DS_Store
