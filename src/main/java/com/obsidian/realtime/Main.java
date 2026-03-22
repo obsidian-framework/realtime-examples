@@ -1,7 +1,6 @@
-package fr.kainovaii.obsidian;
+package com.obsidian.realtime;
 
-
-import fr.kainovaii.obsidian.core.Obsidian;
+import com.obsidian.core.core.Obsidian;
 
 public class Main
 {

@@ -1,7 +1,7 @@
-package fr.kainovaii.obsidian.app.controllers;
+package com.obsidian.realtime.app.controllers;
 
-import fr.kainovaii.obsidian.http.controller.annotations.Controller;
-import fr.kainovaii.obsidian.routing.methods.SSE;
+import com.obsidian.core.http.controller.annotations.Controller;
+import com.obsidian.core.routing.methods.SSE;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.Request;

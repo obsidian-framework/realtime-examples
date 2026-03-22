@@ -1,8 +1,8 @@
-package fr.kainovaii.obsidian.app.controllers;
+package com.obsidian.realtime.app.controllers;
 
-import fr.kainovaii.obsidian.http.controller.BaseController;
-import fr.kainovaii.obsidian.http.controller.annotations.Controller;
-import fr.kainovaii.obsidian.routing.methods.GET;
+import com.obsidian.core.http.controller.BaseController;
+import com.obsidian.core.http.controller.annotations.Controller;
+import com.obsidian.core.routing.methods.GET;
 import spark.Request;
 import spark.Response;
 
